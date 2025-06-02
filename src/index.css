@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@layer base {
+  body {
+  @apply font-sans;
+  background: linear-gradient(to right, #0f2027, #203a43, #197095);
+}
+
+}
