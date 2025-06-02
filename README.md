@@ -26,10 +26,12 @@ A modern weather dashboard built with **React.js** and **Tailwind CSS** using th
 
 Create a `.env` file in your `client/` directory:
 
-```env
+   
 VITE_OPENWEATHER_API_KEY=your_api_key_here
 VITE_TIMEZONEDB_API_KEY=your_timezone_api_key_here
-## 🌤️ Weather Dashboard
+
+
+## 🌤️Weather Dashboard
 
 ![App Logo](./public/logo.png)
 
@@ -66,3 +68,4 @@ All API keys are stored in an `.env` file and ignored by Git using `.gitignore`.
 📄 License
 MIT — free to use and modify.
 Made with ❤️ by Kawther.
+```
