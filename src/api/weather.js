@@ -20,17 +20,17 @@ export const getWeatherData = async (city, unit = 'metric') => {
     params: {
       lat,
       lon,
-      exclude: 'minutely,hourly,alerts',
+      exclude: 'minutely,alerts', // ✅ Keep hourly included
       units: unit,
       appid: API_KEY
     }
   });
-  
-    const airPollution = await axios.get(
+
+  const airPollution = await axios.get(
     `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`
   );
-   const aqi = airPollution.data.list[0].main.aqi;
-  // Optional: get timezone name if you use it
+  const aqi = airPollution.data.list[0].main.aqi;
+
   const tzRes = await axios.get(`${TIMEZONE_API}`, {
     params: {
       key: TIMEZONE_API_KEY,
@@ -44,6 +44,7 @@ export const getWeatherData = async (city, unit = 'metric') => {
   return {
     current: oneCall.data.current,
     daily: oneCall.data.daily.slice(0, 7),
+    hourly: oneCall.data.hourly, // ✅ Add this
     timezone: oneCall.data.timezone || tzRes.data.zoneName,
     aqi
   };
