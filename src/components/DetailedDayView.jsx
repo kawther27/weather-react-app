@@ -1,13 +1,5 @@
 import React from "react";
 import TemperatureChart from "./TemperatureChart";
-import WindStatus from "./Highlights/WindStatus";
-import Visibility from "./Highlights/Visibility";
-import UVIndex from "./Highlights/UVIndex";
-import MapView from "./MapView";
-import LocationInfo from "./LocationInfo";
-import Humidity from "./Highlights/Humidity";
-import AirQuality from "./Highlights/AirQuality";
-import SunriseSunset from "./Highlights/SunriseSunset";
 
 const DetailedDayView = ({ dayData}) => {
   if (!dayData) return null;
