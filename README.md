@@ -37,12 +37,13 @@ A modern weather dashboard built with **React.js** and **Tailwind CSS** using th
 
 Create a `.env` file in your root project directory and add:
 
-```env
-VITE_OPENWEATHER_API_KEY=your_api_key_here
-VITE_TIMEZONEDB_API_KEY=your_timezone_api_key_here
+   ``env
+   VITE_OPENWEATHER_API_KEY=your_api_key_here
+   VITE_TIMEZONEDB_API_KEY=your_timezone_api_key_here
 
 
-🚀 Upcoming Features
+ 
+## 🚀 Upcoming Features
 Auto-detect user location
 
 Dark mode / Light mode toggle
@@ -51,12 +52,12 @@ Additional weather parameters (e.g., air quality breakdown)
 
 Accessibility enhancements
 
-📄 License
+## 📄 License
 MIT — free to use and modify.
 Made with ❤️ by Kawther.
 
 
----
+
 
 ✅ You can now copy this updated version directly into your `README.md`.
 
