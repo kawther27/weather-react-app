@@ -59,6 +59,4 @@ Made with ❤️ by Kawther.
 
 
 
-✅ You can now copy this updated version directly into your `README.md`.
 
-Let me know if you want to add sections like installation steps or contributor guidelines!
